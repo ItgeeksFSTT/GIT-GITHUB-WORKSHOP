@@ -43,7 +43,7 @@ Clone to your computer:
 
 ```bash
 git clone https://github.com/ItgeeksFSTT/GIT-GITHUB-WORKSHOP
-cd it-geeks-portfolio
+cd GIT-GITHUB-WORKSHOP
 ```
 
 ### Phase 2: Create Your Workspace (Everyone)
@@ -124,4 +124,5 @@ You are now Git contributors!
 ---
 
 **Built with ❤️ by IT Geeks Club**
+
 
