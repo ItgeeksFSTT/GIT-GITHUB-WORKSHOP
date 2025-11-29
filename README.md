@@ -75,7 +75,7 @@ Push your branch to GitHub:
 
 ```bash
 # Example for Member 1
-git push -u origin feature-hero
+git push -u origin branch-name
 ```
 
 Go to GitHub. You will see a yellow box: "Compare & pull request". Click it.
@@ -99,7 +99,7 @@ If two members edited the exact same line, GitHub will block the merge.
 Pull the latest main into your branch:
 
 ```bash
-git checkout feature-hero
+git checkout branch-name
 git pull origin main
 ```
 
@@ -124,6 +124,7 @@ You are now Git contributors!
 ---
 
 **Built with ❤️ by IT Geeks Club**
+
 
 
 
