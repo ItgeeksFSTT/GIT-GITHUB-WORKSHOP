@@ -52,7 +52,7 @@ Do not work on main! Create your specific branch.
 
 ```bash
 # Example for Member 1
-git checkout -b feature-hero
+git checkout -b branch-name
 ```
 
 ### Phase 3: Code & Commit (Everyone)
@@ -124,5 +124,6 @@ You are now Git contributors!
 ---
 
 **Built with ❤️ by IT Geeks Club**
+
 
 
