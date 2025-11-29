@@ -4,14 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT Geeks Club Portfolio</title>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* SAFOUANE'S FIXED CORNER TAG */
+        .fixed-tag {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3d22d4; /* Dark background */
+            color: #fff; /* White text */
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            z-index: 1000; /* Ensure it stays on top */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Basic styling for the new features section to look good */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .feature-item h3 {
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        .feature-item .icon {
+            font-size: 3rem;
+            color: #007bff; /* Example highlight color */
+        }
+
+        /* Styling for the new event CTA section */
+        #event-cta {
+            background-color: #007bff;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        #event-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        #event-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navigation (Shared / Already Done) -->
     <nav class="navbar">
         <div class="container">
             <h1 class="logo">IT Geeks<span class="dot">.</span></h1>
@@ -25,35 +75,47 @@
         </div>
     </nav>
 
-    <!-- =========================================
-         MEMBER 1 AREA: HERO SECTION
-         Branch Name: feature-hero
-         Task: Add a headline, subheadline, and a CTA button.
-         ========================================= -->
     <section id="hero" class="hero-section">
         <div class="container">
-            <!-- TODO: Member 1 code goes here -->
             <div class="hero-content fade-in">
                 <h1>Welcome to <span class="highlight">IT Geeks</span></h1>
                 <p>Code. Collaborate. Create. The university's premier tech community.</p>
                 <a href="#about" class="btn-primary">Explore More</a>
             </div>
-             <!-- End Member 1 -->
+             </div>
+    </section>
+
+    <section id="features" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Join Us?</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item fade-in-left">
+                    <div class="icon">💡</div>
+                    <h3>Skill Building</h3>
+                    <p>Hands-on workshops and real-world projects to boost your portfolio.</p>
+                </div>
+                <div class="feature-item fade-in">
+                    <div class="icon">🤝</div>
+                    <h3>Networking</h3>
+                    <p>Connect with peers, alumni, and industry professionals.</p>
+                </div>
+                <div class="feature-item fade-in-right">
+                    <div class="icon">🚀</div>
+                    <h3>Innovation</h3>
+                    <p>Participate in hackathons and drive creative technology solutions.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- =========================================
-         MEMBER 2 AREA: ABOUT CLUB
-         Branch Name: feature-about
-         Task: Add a description and an 'About' image placeholder.
-         ========================================= -->
     <section id="about" class="section-padding bg-light">
         <div class="container">
             <div class="section-title">
                 <h2>Who We Are</h2>
             </div>
             <div class="about-grid">
-                <!-- TODO: Member 2 code goes here -->
                 <div class="about-text fade-in-left">
                     <p>We are a community of passionate developers, designers, and tech enthusiasts. Our mission is to bridge the gap between academic theory and real-world application.</p>
                     <ul class="stats-list">
@@ -67,91 +129,73 @@
                         <img src="assets/ItGeeks.png" alt="IT Geeks Club Photo" class="club-photo">
                     </div>
                 </div>
-                <!-- End Member 2 -->
-            </div>
+                </div>
         </div>
     </section>
 
-    <!-- =========================================
-         MEMBER 3 AREA: ACTIVITIES / WORKSHOPS
-         Branch Name: feature-activities
-         Task: Create 3 cards for different workshops (Web, AI, CyberSec).
-         ========================================= -->
     <section id="activities" class="section-padding">
         <div class="container">
             <div class="section-title">
                 <h2>Our Activities</h2>
             </div>
             <div class="cards-grid">
-                <!-- TODO: Member 3 code goes here -->
-                <!-- Card 1 -->
                 <div class="card fade-up">
                     <div class="card-icon">💻</div>
                     <h3>Web Development</h3>
                     <p>Learn HTML, CSS, JS, and modern frameworks like React.</p>
                 </div>
-                <!-- Card 2 -->
                 <div class="card fade-up delay-100">
                     <div class="card-icon">🤖</div>
                     <h3>Artificial Intelligence</h3>
                     <p>Dive into Python, Machine Learning, and Neural Networks.</p>
                 </div>
-                <!-- Card 3 -->
                 <div class="card fade-up delay-200">
                     <div class="card-icon">🔒</div>
                     <h3>Cyber Security</h3>
                     <p>Understand ethical hacking, encryption, and network safety.</p>
                 </div>
-                <!-- End Member 3 -->
-            </div>
+                </div>
         </div>
     </section>
 
-    <!-- =========================================
-         MEMBER 4 AREA: TEAM MEMBERS
-         Branch Name: feature-team
-         Task: Add profile cards for the club board members.
-         ========================================= -->
+    <section id="event-cta">
+        <div class="container">
+            <h2>Next Big Event: Annual Hackathon!</h2>
+            <p>Join us for 24 hours of coding, collaboration, and creating the next big thing. All skill levels welcome.</p>
+            <a href="#contact" class="btn-primary">Register Now</a>
+        </div>
+    </section>
+
     <section id="team" class="section-padding bg-light">
         <div class="container">
             <div class="section-title">
                 <h2>Meet The Team</h2>
             </div>
             <div class="team-grid">
-                <!-- TODO: Member 4 code goes here -->
-                <!-- Member 1 -->
                 <div class="team-member fade-in">
                     <div class="avatar-placeholder"></div>
                     <h4>Alex Johnson</h4>
                     <span>Member 1</span>
                 </div>
-                <!-- Member 2 -->
                 <div class="team-member fade-in">
                     <div class="avatar-placeholder"></div>
                     <h4>Sarah Lee</h4>
                     <span>Member 2</span>
                 </div>
-                <!-- Member 3 -->
                 <div class="team-member fade-in">
                     <div class="avatar-placeholder"></div>
                     <h4>Mike Chen</h4>
                     <span>Member 3</span>
                 </div>
-                <!-- Member 4 -->
                 <div class="team-member fade-in">
                     <div class="avatar-placeholder"></div>
                     <h4>Emily Davis</h4>
                     <span>Member 4</span>
                 </div>
-                <!-- End Member 4 -->
-            </div>
+                </div>
         </div>
     </section>
 
-    <!-- =========================================
-         OPTIONAL / BONUS: CONTACT SECTION
-         Can be done by anyone who finishes early
-         ========================================= -->
     <section id="contact" class="section-padding">
         <div class="container contact-wrapper">
             <h2>Ready to Join?</h2>
@@ -164,7 +208,10 @@
         <p>&copy; 2025 IT Geeks Club. Built with Git & GitHub.</p>
     </footer>
 
+    <div class="fixed-tag">
+        Coded by Safouane
+    </div>
+
     <script src="assets/js/main.js"></script>
 </body>
 </html>
-
