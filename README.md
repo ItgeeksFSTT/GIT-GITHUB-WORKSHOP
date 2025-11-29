@@ -67,6 +67,8 @@ Do not work on main! Create your specific branch.
 # Example for Member 1
 git checkout -b branch-name
 ```
+#### Change the 'origin' link to YOUR new Team Repository
+git remote set-url origin https://github.com/TEAM-LEAD-USERNAME/team-name.git
 
 ### Phase 3: Code & Commit (Everyone)
 
@@ -92,6 +94,7 @@ git push -u origin branch-name
 ```
 
 Go to GitHub. You will see a yellow box: "Compare & pull request". Click it.
+
 
 - **Title**: "Finished Hero Section"
 - **Description**: "Added new headline and button."
@@ -137,6 +140,7 @@ You are now Git contributors!
 ---
 
 **Built with ❤️ by IT Geeks Club**
+
 
 
 
